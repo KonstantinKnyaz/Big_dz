@@ -5,20 +5,9 @@ using namespace std;
 int main()
 {
     setlocale(LC_ALL, "Russian");
-   
-    int num;
-    long otv = 0;
 
-    cout << "Введите число с клавиатуры: ";
-    cin >> num;
-
-    while (num) {
-        if (num != 0) 
-            otv += num;
-        num--;  
-    }
-
-    cout << otv;
+    
+    
 
     return 0;
 }
@@ -104,3 +93,35 @@ int main()
 //for (int i = 2; i <= num; i++)
 //fakt *= i;
 //cout << fakt;
+
+
+//int num;
+//long otv = 0;
+//
+//cout << "Введите число с клавиатуры: ";
+//cin >> num;
+//
+//while (num) {
+//    if (num != 0)
+//        otv += num;
+//    num--;
+//}
+//
+//cout << otv;
+
+
+//for (int i = -7; i < 12; i += 3) {
+//    if (i == -1 || i == 5 || i == 11)
+//        continue;
+//    cout << i << endl;
+//}
+
+//int num;
+//
+//do {
+//    cout << "Введите число 13: ";
+//    cin >> num;
+//
+//} while (num != 13);
+//
+//cout << "Успешно!";

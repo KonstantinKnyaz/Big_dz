@@ -125,3 +125,12 @@ int main()
 //} while (num != 13);
 //
 //cout << "Успешно!";
+
+//int rum = 5;
+//for (int i = 3; i >= -1; i--) {
+//    cout << i << " ";
+//    for (int j = 1; j < rum; j++)
+//        cout << i + j << " ";
+//    rum--;
+//    cout << endl;
+//}

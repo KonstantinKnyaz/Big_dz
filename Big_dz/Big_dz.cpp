@@ -2,16 +2,27 @@
 
 using namespace std;
 
+int summ(int i);
+
 int main()
 {
     setlocale(LC_ALL, "Russian");
-
+    int num;
+    cout << "Введите число: ";
+    cin >> num;
+    cout << "Сумма чисел вашего числа равна: " << summ(num);
     
-    
-
     return 0;
 }
 
+int summ(int i) {
+    int j = 0;
+    while (i) {
+        j += i % 10;
+        i /= 10;
+    }
+    return j;
+}
 //int rows;
 //std::cout << "введите количество рядов: ";
 //std::cin >> rows;
@@ -134,3 +145,27 @@ int main()
 //    rum--;
 //    cout << endl;
 //}
+
+//int arr[5];
+//int* p = arr;
+//cout << "Введите 5 чисел через пробел:";
+//cin >> *p >> *(p + 1) >> *(p + 2) >> *(p + 3) >> *(p + 4);
+//cout << "Ваши 5 чисел:" << endl;
+//for (int i = 0; i < 5; i++)
+//    cout << arr[i] << endl;
+
+//int num;
+//cout << "Введите число: ";
+//cin >> num;
+//cout << "Сумма чисел вашего числа равна: " << summ(num);
+//
+//return 0;
+//}
+//
+//int summ(int i) {
+//    int j = 0;
+//    while (i) {
+//        j += i % 10;
+//        i /= 10;
+//    }
+//    return j;

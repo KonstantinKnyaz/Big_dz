@@ -1,17 +1,38 @@
 ﻿#include <iostream>
+#include <string>
 
 using namespace std;
+
+string end(int num, string *arr);
 
 int main()
 {
     setlocale(LC_ALL, "Russian");
    
+    string arr[] = {"Год", "Года", "Лет"};
+
     
+
+    cout << "26 " << end(26, arr) << endl;
 
     return 0;
 }
 
+string end(int num, string *arr) {
 
+    if (num > 19)
+        num = num % 10;
+
+    if (num == 1)
+        return arr[0];
+    else if (num > 1 && num < 5)
+        return arr[1];
+    else
+        return arr[2];
+
+    
+
+}
 
 //int rows;
 //std::cout << "введите количество рядов: ";

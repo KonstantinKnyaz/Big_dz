@@ -3,36 +3,18 @@
 
 using namespace std;
 
-string end(int num, string *arr);
+
 
 int main()
 {
     setlocale(LC_ALL, "Russian");
    
-    string arr[] = {"Год", "Года", "Лет"};
-
     
-
-    cout << "26 " << end(26, arr) << endl;
 
     return 0;
 }
 
-string end(int num, string *arr) {
 
-    if (num > 19)
-        num = num % 10;
-
-    if (num == 1)
-        return arr[0];
-    else if (num > 1 && num < 5)
-        return arr[1];
-    else
-        return arr[2];
-
-    
-
-}
 
 //int rows;
 //std::cout << "введите количество рядов: ";
@@ -207,4 +189,186 @@ string end(int num, string *arr) {
 //        k /= 10;
 //        cout << k << "К";
 //    }
+//}
+
+
+//string end(int num, string* arr);
+//
+//int main()
+//{
+//    setlocale(LC_ALL, "Russian");
+//
+//    string arr[] = { "Год", "Года", "Лет" };
+//
+//    int a;
+//
+//    cout << "Введите год: ";
+//    cin >> a;
+//
+//    cout << a << " " << end(a, arr) << endl;
+//
+//    return 0;
+//}
+//
+//string end(int num, string* arr) {
+//
+//    if (num > 19)
+//        num = num % 10;
+//
+//    if (num == 1)
+//        return arr[0];
+//    else if (num > 1 && num < 5)
+//        return arr[1];
+//    else
+//        return arr[2];
+//
+//
+//
+//}
+
+//int rast(int t, int v);
+//void end(int s);
+//
+//int main()
+//{
+//    setlocale(LC_ALL, "Russian");
+//
+//
+//    int t, v;
+//
+//    cout << "Введите время: ";
+//    cin >> t;
+//    cout << "Введите скорость: ";
+//    cin >> v;
+//
+//    rast(t, v);
+//
+//    return 0;
+//}
+//
+//int rast(int t, int v) {
+//
+//    int s;
+//    s = t * v;
+//
+//    end(s);
+//
+//    return s;
+//}
+//
+//void end(int s) {
+//
+//    if (s == 1 || s % 10 == 1)
+//        cout << "Вы прошли: " << s << " километр";
+//    else if (s > 1 && s < 5 || s % 10 > 1 && s % 10 < 5)
+//        cout << "Вы прошли: " << s << " километра";
+//    else
+//        cout << "Вы прошли: " << s << " километров";
+//
+//}
+
+//int rast(int t, int v);
+//void end(int s);
+//
+//int main()
+//{
+//    setlocale(LC_ALL, "Russian");
+//
+//
+//    int t, v;
+//
+//    cout << "Введите время: ";
+//    cin >> t;
+//    cout << "Введите скорость: ";
+//    cin >> v;
+//
+//    rast(t, v);
+//
+//    return 0;
+//}
+//
+//int rast(int t, int v) {
+//
+//    int s;
+//    s = t * v;
+//
+//    end(s);
+//
+//    return s;
+//}
+//
+//void end(int s) {
+//
+//    if (s == 1 || s % 10 == 1)
+//        cout << "Вы прошли: " << s << " километр";
+//    else if (s > 1 && s < 5 || s % 10 > 1 && s % 10 < 5)
+//        cout << "Вы прошли: " << s << " километра";
+//    else
+//        cout << "Вы прошли: " << s << " километров";
+//
+//}
+
+
+//char srav(int a, int b);
+//
+//int main()
+//{
+//    setlocale(LC_ALL, "Russian");
+//
+//    int a, b;
+//
+//    cout << "Введите первое число: ";
+//    cin >> a;
+//    cout << "Введите второе число: ";
+//    cin >> b;
+//
+//    cout << a << " " << srav(a, b) << " " << b;
+//
+//    return 0;
+//}
+//
+//char srav(int a, int b) {
+//
+//    if (a > b)
+//        return('>');
+//    else if (a < b)
+//        return('<');
+//    else if (a = b)
+//        return('=');
+//
+//}
+
+//void println(string sl_1, string sl_2);
+//void println(int num_1, int num_2);
+//void println(int num, bool uno);
+//
+//int main()
+//{
+//    setlocale(LC_ALL, "Russian");
+//
+//    println("Hello", "world");
+//
+//    println(5, 7);
+//
+//    println(2, true);
+//
+//    return 0;
+//}
+//
+//void println(string sl_1, string sl_2) {
+//
+//    cout << sl_1 << " " << sl_2 << endl;
+//
+//}
+//
+//void println(int num_1, int num_2) {
+//
+//    cout << num_1 << " \n" << num_2 << endl;
+//
+//}
+//
+//void println(int num, bool uno) {
+//
+//    cout << num << " " << uno;
+//
 //}

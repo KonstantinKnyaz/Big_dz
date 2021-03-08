@@ -9,18 +9,26 @@ int main()
 {
     setlocale(LC_ALL, "Russian");
    
-    int num;
+    float vklad;
+    int age;
+    int stav;
 
-    cout << "Введите число: ";
-    cin >> num;
+    cout << "Введите сумму вклада: ";
+    cin >> vklad;
+    cout << "Введите количество лет: ";
+    cin >> age;
+    cout << "Введите ставку в %: ";
+    cin >> stav;
 
-    int i = num;
+    int i = age - 1;
 
     while (i) {
-        if (num % i == 0)
-            cout << i << endl;
+        vklad = vklad / 100 * stav + vklad;
+        cout << "После " << (age - i) << " года - " << vklad << endl;
         i--;
     }
+    cout << "В итоге, после " << (age - 1) << " лет сумма составит " << vklad;
+
 
     return 0;
 }
@@ -400,6 +408,34 @@ int main()
 //            cout << i << endl;
 //        i--;
 //    }
+//
+//    return 0;
+//}
+
+//int main()
+//{
+//    setlocale(LC_ALL, "Russian");
+//
+//    float vklad;
+//    int age;
+//    int stav;
+//
+//    cout << "Введите сумму вклада: ";
+//    cin >> vklad;
+//    cout << "Введите количество лет: ";
+//    cin >> age;
+//    cout << "Введите ставку в %: ";
+//    cin >> stav;
+//
+//    int i = age - 1;
+//
+//    while (i) {
+//        vklad = vklad / 100 * stav + vklad;
+//        cout << "После " << (age - i) << " года - " << vklad << endl;
+//        i--;
+//    }
+//    cout << "В итоге, после " << (age - 1) << " лет сумма составит " << vklad;
+//
 //
 //    return 0;
 //}

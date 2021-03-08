@@ -9,7 +9,18 @@ int main()
 {
     setlocale(LC_ALL, "Russian");
    
-    
+    int num;
+
+    cout << "Введите число: ";
+    cin >> num;
+
+    int i = num;
+
+    while (i) {
+        if (num % i == 0)
+            cout << i << endl;
+        i--;
+    }
 
     return 0;
 }
@@ -371,4 +382,24 @@ int main()
 //
 //    cout << num << " " << uno;
 //
+//}
+
+//int main()
+//{
+//    setlocale(LC_ALL, "Russian");
+//
+//    int num;
+//
+//    cout << "Введите число: ";
+//    cin >> num;
+//
+//    int i = num;
+//
+//    while (i) {
+//        if (num % i == 0)
+//            cout << i << endl;
+//        i--;
+//    }
+//
+//    return 0;
 //}
